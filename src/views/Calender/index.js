@@ -8,9 +8,9 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
 import ActionCalenderDropDown from './ActionCalenderDropDown';
-import AddTask from 'views/Task/AddTask';
+import AddTask from 'views/Request/AddTask';
 import AddCalls from 'views/Calls/Addcalls';
-import AddMeetings from 'views/Metting/Addmeetings';
+// import AddMeetings from 'views/LogOut/Addmeetings';
 
 // ----------------------------------------------------------------------
 function renderEventContent(eventInfo) {
@@ -43,7 +43,7 @@ const Calender = () => {
       <AddTask open={openTask} handleClose={handleCloseTask} lead="lead" contact="contact" />
 
       {/* Add Meeting Model */}
-      <AddMeetings open={openMeeting} handleClose={handleCloseMeeting} />
+      {/* <AddMeetings open={openMeeting} handleClose={handleCloseMeeting} /> */}
 
       {/* Add Call Model */}
       <AddCalls open={openCall} handleClose={handleCloseCall} />
