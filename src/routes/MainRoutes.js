@@ -41,7 +41,7 @@ const MainRoutes = {
       path: 'dashboard',
       children: [
         {
-          path: 'lead',
+          path: 'user',
           element: <LeadManagement />
         }
       ]
@@ -50,7 +50,7 @@ const MainRoutes = {
       path: 'dashboard',
       children: [
         {
-          path: 'contact',
+          path: 'banklist',
           element: <ContactManagement />
         }
       ]
@@ -68,7 +68,7 @@ const MainRoutes = {
       path: 'dashboard',
       children: [
         {
-          path: 'policy',
+          path: 'category',
           element: <Policy />
         }
       ]
@@ -86,7 +86,7 @@ const MainRoutes = {
       path: 'dashboard',
       children: [
         {
-          path: 'task',
+          path: 'deleteuser',
           element: <Task />
         }
       ]

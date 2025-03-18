@@ -12,6 +12,12 @@ import {
   IconPhoneCheck,
   IconUsers
 } from '@tabler/icons';
+import PersonIcon from '@mui/icons-material/Person';
+import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
+import CategoryIcon from '@mui/icons-material/Category';
+import DeleteIcon from '@mui/icons-material/Delete';
+import HomeIcon from '@mui/icons-material/Home';
+import LogoutIcon from '@mui/icons-material/Logout';
 
 // constant
 const icons = {
@@ -27,9 +33,6 @@ const icons = {
   IconPhoneCheck,
   IconUsers
 };
-
-// ==============================|| DASHBOARD MENU ITEMS ||============================== //
-
 const dashboard = {
   title: 'Dashboard-Menu',
   type: 'group',
@@ -39,89 +42,89 @@ const dashboard = {
       title: 'Dashboard',
       type: 'item',
       url: '/dashboard/default',
-      icon: icons.IconHome,
+      icon: HomeIcon,
       breadcrumbs: false
     },
     {
       id: '01',
-      title: 'Lead Management',
+      title: 'User',
       type: 'item',
-      url: '/dashboard/lead',
-      icon: icons.IconAntennaBars5,
+      url: '/dashboard/user',
+      icon: PersonIcon,
       breadcrumbs: false
     },
     {
       id: '02',
-      title: 'Contact Management',
+      title: 'Banks',
       type: 'item',
-      url: '/dashboard/contact',
-      icon: icons.IconPhoneCheck,
+      url: '/dashboard/banklist',
+      icon: AccountBalanceIcon,
       breadcrumbs: false
     },
     {
       id: '03',
-      title: 'Policy Management',
+      title: 'Category',
       type: 'item',
-      url: '/dashboard/policy',
-      icon: icons.IconNotebook,
+      url: '/dashboard/category',
+      icon: CategoryIcon,
       breadcrumbs: false
     },
     {
       id: '04',
-      title: 'Tasks',
+      title: 'Delete Request',
       type: 'item',
-      url: '/dashboard/task',
-      icon: icons.IconChecklist,
+      url: '/dashboard/deleteuser',
+      icon: DeleteIcon,
       breadcrumbs: false
     },
     {
       id: '05',
-      title: 'Meeting',
+      title: 'Logout',
       type: 'item',
       url: '/dashboard/meeting',
-      icon: icons.IconUsers,
+      icon: LogoutIcon,
       breadcrumbs: false
     },
-    {
-      id: '06',
-      title: 'Calls',
-      type: 'item',
-      url: '/dashboard/call',
-      icon: icons.IconPhoneCall,
-      breadcrumbs: false
-    },
-    {
-      id: '07',
-      title: 'Emails',
-      type: 'item',
-      url: '/dashboard/email',
-      icon: icons.IconMail,
-      breadcrumbs: false
-    },
-    {
-      id: '08',
-      title: 'Calender',
-      type: 'item',
-      url: '/dashboard/calender',
-      icon: icons.IconCalendarEvent,
-      breadcrumbs: false
-    },
-    {
-      id: '09',
-      title: 'Document Management',
-      type: 'item',
-      url: '/dashboard/document',
-      icon: icons.IconFileUpload,
-      breadcrumbs: false
-    },
-    {
-      id: '10',
-      title: 'Email Template',
-      type: 'item',
-      url: '/dashboard/emailtemplate',
-      icon: icons.IconFileInvoice,
-      breadcrumbs: false
-    }
+    // {
+    //   id: '06',
+    //   title: 'Calls',
+    //   type: 'item',
+    //   url: '/dashboard/call',
+    //   icon: icons.IconPhoneCall,
+    //   breadcrumbs: false
+    // },
+    // {
+    //   id: '07',
+    //   title: 'Emails',
+    //   type: 'item',
+    //   url: '/dashboard/email',
+    //   icon: icons.IconMail,
+    //   breadcrumbs: false
+    // },
+    // {
+    //   id: '08',
+    //   title: 'Calender',
+    //   type: 'item',
+    //   url: '/dashboard/calender',
+    //   icon: icons.IconCalendarEvent,
+    //   breadcrumbs: false
+    // },
+    // {
+    //   id: '09',
+    //   title: 'Document Management',
+    //   type: 'item',
+    //   url: '/dashboard/document',
+    //   icon: icons.IconFileUpload,
+    //   breadcrumbs: false
+    // },
+    // {
+    //   id: '10',
+    //   title: 'Email Template',
+    //   type: 'item',
+    //   url: '/dashboard/emailtemplate',
+    //   icon: icons.IconFileInvoice,
+    //   breadcrumbs: false
+    // }
   ]
 };
 
