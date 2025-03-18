@@ -79,7 +79,7 @@ const dashboard = {
       id: '05',
       title: 'Logout',
       type: 'item',
-      url: '/dashboard/meeting',
+      url: '/dashboard/logout',
       icon: LogoutIcon,
       breadcrumbs: false
     }

@@ -6,13 +6,13 @@ import Loadable from 'ui-component/Loadable';
 
 // dashboard routing
 const DashboardDefault = Loadable(lazy(() => import('views/dashboard/Default')));
-const LeadManagement = Loadable(lazy(() => import('views/Lead')));
-const ContactManagement = Loadable(lazy(() => import('views/Contact')));
+const LeadManagement = Loadable(lazy(() => import('views/UserList')));
+const ContactManagement = Loadable(lazy(() => import('views/Bank')));
 const Call = Loadable(lazy(() => import('views/Calls')));
-const Policy = Loadable(lazy(() => import('views/Policy')));
-const Metting = Loadable(lazy(() => import('views/Metting')));
+const Policy = Loadable(lazy(() => import('views/Category')));
+const Logout = Loadable(lazy(() => import('views/LogOut')));
 const Email = Loadable(lazy(() => import('views/Email')));
-const Task = Loadable(lazy(() => import('views/Task')));
+const Task = Loadable(lazy(() => import('views/Request')));
 const EmailTemplates = Loadable(lazy(() => import('views/EmailTemplates')));
 const Document = Loadable(lazy(() => import('views/Documents')));
 const Calender = Loadable(lazy(() => import('views/Calender')));
@@ -104,8 +104,8 @@ const MainRoutes = {
       path: 'dashboard',
       children: [
         {
-          path: 'meeting',
-          element: <Metting />
+          path: 'logout',
+          element: <Logout />
         }
       ]
     },
