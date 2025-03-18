@@ -1,17 +1,10 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react-hooks/exhaustive-deps */
 import { useState } from 'react';
-// @mui
-import { Stack, Button, Container, Typography, Box, Card, Breadcrumbs } from '@mui/material';
+import { Container, Typography, Box, Card, Breadcrumbs } from '@mui/material';
 import { DataGrid, GridToolbar } from '@mui/x-data-grid';
-
-import Iconify from '../../ui-component/iconify';
 import TableStyle from '../../ui-component/TableStyle';
 import AddLead from './AddLead.js';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import { Link } from 'react-router-dom';
-
-// ----------------------------------------------------------------------
 
 const leadData = [
   {
@@ -59,11 +52,10 @@ const Lead = () => {
       field: 'action',
       headerName: 'Action',
       flex: 1
-      // eslint-disable-next-line arrow-body-style
     }
   ];
 
-  const handleOpenAdd = () => setOpenAdd(true);
+  // const handleOpenAdd = () => setOpenAdd(true);
   const handleCloseAdd = () => setOpenAdd(false);
   const breadcrumbs = [
     <Link key="1" to="/" style={{ textDecoration: 'none', color: 'black' }}>
@@ -77,7 +69,7 @@ const Lead = () => {
     <>
       <AddLead open={openAdd} handleClose={handleCloseAdd} />
       <Container>
-      <Box
+        <Box
           sx={{
             display: 'flex',
             backgroundColor: 'white',

@@ -18,8 +18,6 @@ import CategoryIcon from '@mui/icons-material/Category';
 import DeleteIcon from '@mui/icons-material/Delete';
 import HomeIcon from '@mui/icons-material/Home';
 import LogoutIcon from '@mui/icons-material/Logout';
-
-// constant
 const icons = {
   IconHome,
   IconCalendarEvent,
@@ -84,7 +82,7 @@ const dashboard = {
       url: '/dashboard/meeting',
       icon: LogoutIcon,
       breadcrumbs: false
-    },
+    }
     // {
     //   id: '06',
     //   title: 'Calls',

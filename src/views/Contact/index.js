@@ -1,17 +1,10 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react-hooks/exhaustive-deps */
 import { useState } from 'react';
-// @mui
-import { Stack, Button, Container, Typography, Box, Card, Breadcrumbs } from '@mui/material';
+import { Container, Typography, Box, Card, Breadcrumbs } from '@mui/material';
 import TableStyle from '../../ui-component/TableStyle';
 import { DataGrid, GridToolbar } from '@mui/x-data-grid';
-
-import Iconify from '../../ui-component/iconify';
 import AddContact from './AddContact';
 import { Link } from 'react-router-dom';
-
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-// ----------------------------------------------------------------------
 
 const leadData = [
   {
@@ -58,40 +51,38 @@ const Contact = () => {
       field: 'action',
       headerName: 'Action',
       flex: 1
-      // eslint-disable-next-line arrow-body-style
     }
   ];
 
-  const handleOpenAdd = () => setOpenAdd(true);
   const handleCloseAdd = () => setOpenAdd(false);
-    const breadcrumbs = [
-      <Link key="1" to="/" style={{ textDecoration: 'none', color: 'black' }}>
-        Dashboard
-      </Link>,
-      <Typography key="3" sx={{ color: 'black' }}>
-        Bank List
-      </Typography>
-    ];
+  const breadcrumbs = [
+    <Link key="1" to="/" style={{ textDecoration: 'none', color: 'black' }}>
+      Dashboard
+    </Link>,
+    <Typography key="3" sx={{ color: 'black' }}>
+      Bank List
+    </Typography>
+  ];
   return (
     <>
       <AddContact open={openAdd} handleClose={handleCloseAdd} />
       <Container>
         <Box
-                 sx={{
-                   display: 'flex',
-                   backgroundColor: 'white',
-                   justifyContent: 'space-between',
-                   alignItems: 'center',
-                   marginBottom: '20px',
-                   borderRadius: '12px',
-                   padding: '15px 30px'
-                 }}
-               >
-                 <Typography variant="h3"> Bank List</Typography>
-                 <Breadcrumbs separator={<NavigateNextIcon fontSize="small" style={{ color: 'black' }} />} aria-label="breadcrumb">
-                   {breadcrumbs}
-                 </Breadcrumbs>
-               </Box>
+          sx={{
+            display: 'flex',
+            backgroundColor: 'white',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            marginBottom: '20px',
+            borderRadius: '12px',
+            padding: '15px 30px'
+          }}
+        >
+          <Typography variant="h3"> Bank List</Typography>
+          <Breadcrumbs separator={<NavigateNextIcon fontSize="small" style={{ color: 'black' }} />} aria-label="breadcrumb">
+            {breadcrumbs}
+          </Breadcrumbs>
+        </Box>
         <TableStyle>
           <Box width="100%">
             <Card style={{ height: '600px', paddingTop: '15px' }}>
